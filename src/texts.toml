@@ -8,7 +8,7 @@
 "config.task_workers" = "Task workers"
 "config.task_workers.doc" = "The most worker threads each task group of the dedicated server starts, 1 to 64. 0 is automatic: the container's CPU limit under Wine, else as many as the game picks. Takes effect when the server starts again."
 "config.server_wait_cap_ms" = "Server wait cap, ms"
-"config.server_wait_cap_ms.doc" = "The longest the server's game loop waits between its passes while players are online, 1 to 8 ms, never past the next simulation step. 1 is vanilla. Check gliding, joining and combat before keeping more."
+"config.server_wait_cap_ms.doc" = "The longest the server's game loop waits between its passes while players are online, 1 to 8 ms, never past the next simulation step. 1 is vanilla. Check gliding, joining and combat before keeping more. Raising it from 1 takes effect at the next start when the game started with it at 1 and measure mode off."
 "config.measure" = "Measure mode"
 "config.measure.doc" = "A line a minute in the log and the status summary: CPU by thread group, loop and step rates, exact waits and the server's Bad Performance warnings."
 
@@ -22,6 +22,6 @@
 "config.task_workers" = "Робочі потоки"
 "config.task_workers.doc" = "Найбільше робочих потоків, які запускає кожна група завдань виділеного сервера, від 1 до 64. 0 означає автоматично: ліміт CPU контейнера під Wine, інакше стільки, скільки вибере гра. Діє після перезапуску сервера."
 "config.server_wait_cap_ms" = "Межа очікування сервера, мс"
-"config.server_wait_cap_ms.doc" = "Найдовше очікування ігрового циклу сервера між проходами, поки на ньому є гравці, від 1 до 8 мс, ніколи не довше за наступний крок симуляції. 1 як у грі. Перш ніж лишати більше, перевірте ширяння, приєднання й бій."
+"config.server_wait_cap_ms.doc" = "Найдовше очікування ігрового циклу сервера між проходами, поки на ньому є гравці, від 1 до 8 мс, ніколи не довше за наступний крок симуляції. 1 як у грі. Перш ніж лишати більше, перевірте ширяння, приєднання й бій. Підвищення з 1 діє з наступного запуску, якщо гра стартувала з 1 і вимкненим режимом вимірювань."
 "config.measure" = "Режим вимірювань"
 "config.measure.doc" = "Рядок щохвилини в журналі та у зведенні стану: CPU за групами потоків, частота циклу й кроків, точні очікування та попередження сервера Bad Performance."

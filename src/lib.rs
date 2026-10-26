@@ -85,7 +85,8 @@ pub struct Settings {
     /// The longest the server's game loop waits between its passes while
     /// players are online, in milliseconds, 1 to 8, never past the next
     /// simulation step. 1 is vanilla. Check gliding, joining and combat
-    /// before keeping more.
+    /// before keeping more. Raising it from 1 takes effect at the next start
+    /// when the game started with it at 1 and measure mode off.
     #[config(runtime, range = 1..=8)]
     pub server_wait_cap_ms: u32,
     /// A line a minute in the log and the status summary: CPU, by thread
